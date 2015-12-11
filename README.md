@@ -17,7 +17,7 @@ if(Sdk.isAtLeastLollipop()){
 }
 ```
 
-Examples:
+# Examples:
 
 ```java
 public void example(){
