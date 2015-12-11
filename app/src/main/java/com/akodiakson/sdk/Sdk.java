@@ -20,6 +20,8 @@ public interface Sdk {
 
     int getVersion();
 
+    boolean isAtLeastCurrentDevelopmentVersion();
+
     boolean isAtLeastMarshmallow();
 
     boolean isAtLeastLollipopMR1();

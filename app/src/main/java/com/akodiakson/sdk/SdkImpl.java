@@ -26,6 +26,11 @@ public class SdkImpl implements Sdk {
     }
 
     @Override
+    public boolean isAtLeastCurrentDevelopmentVersion() {
+        return getVersion() >= Build.VERSION_CODES.CUR_DEVELOPMENT;
+    }
+
+    @Override
     public boolean isAtLeastMarshmallow() {
         return getVersion() >= Build.VERSION_CODES.M;
     }
