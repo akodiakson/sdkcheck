@@ -10,3 +10,6 @@ with:
 if(Sdk.getInstance().isAtLeastLollipop()){
 ...
 }
+
+
+compile 'com.github.akodiakson:sdkcheck:0.1.4'
