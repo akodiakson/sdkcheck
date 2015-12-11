@@ -1,6 +1,9 @@
 package com.akodiakson.sdk;
 
 public interface SdkContract {
+
+    int getVersion();
+
     boolean isAtLeastMarshmallow();
 
     boolean isAtLeastLollipopMR1();
