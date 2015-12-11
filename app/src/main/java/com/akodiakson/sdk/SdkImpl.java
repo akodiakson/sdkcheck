@@ -1,23 +1,20 @@
-package com.akodiakson.sdk.singleton;
+package com.akodiakson.sdk;
 
 import android.os.Build;
 
-import com.akodiakson.sdk.SdkContract;
+public class SdkImpl implements Sdk {
 
-public class Sdk implements SdkContract {
 
-    private static Sdk INSTANCE = new Sdk();
-
-    Sdk() {
-    }
-
-    public static Sdk getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new Sdk();
+    public void example(){
+        Sdk sdk = new SdkImpl();
+        if(sdk.isAtLeastMarshmallow()){
+            System.out.println("I'm fluffy");
+        } else if(sdk.isAtLeastLollipop()){
+            System.out.println("I'm sticky");
+        } else if(sdk.isAtLeastKitKat()){
+            System.out.println("I'm crunchy");
         }
-        return INSTANCE;
     }
-
     public int getVersion() {
         return android.os.Build.VERSION.SDK_INT;
     }

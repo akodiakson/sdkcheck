@@ -1,66 +1,34 @@
 package com.akodiakson.sdk;
 
-import android.os.Build;
+public interface Sdk {
 
-public class Sdk implements SdkContract {
+    int getVersion();
 
-    public int getVersion() {
-        return android.os.Build.VERSION.SDK_INT;
-    }
+    boolean isAtLeastMarshmallow();
 
-    public boolean isAtLeastMarshmallow() {
-        return getVersion() >= Build.VERSION_CODES.M;
-    }
+    boolean isAtLeastLollipopMR1();
 
-    public boolean isAtLeastLollipopMR1() {
-        return getVersion() >= Build.VERSION_CODES.LOLLIPOP_MR1;
-    }
+    boolean isAtLeastLollipop();
 
-    public boolean isAtLeastLollipop() {
-        return getVersion() >= Build.VERSION_CODES.LOLLIPOP;
-    }
+    boolean isAtLeastKitKat();
 
-    public boolean isAtLeastKitKat() {
-        return getVersion() >= Build.VERSION_CODES.KITKAT;
-    }
+    boolean isAtLeastJellyBeanMR2();
 
-    public boolean isAtLeastJellyBeanMR2() {
-        return getVersion() >= Build.VERSION_CODES.JELLY_BEAN_MR2;
-    }
+    boolean isAtLeastJellyBeanMR1();
 
-    public boolean isAtLeastJellyBeanMR1() {
-        return getVersion() >= Build.VERSION_CODES.JELLY_BEAN_MR1;
-    }
+    boolean isAtLeastJellyBean();
 
-    public boolean isAtLeastJellyBean() {
-        return getVersion() >= Build.VERSION_CODES.JELLY_BEAN;
-    }
+    boolean isAtLeastICSMR1();
 
-    public boolean isAtLeastICSMR1() {
-        return getVersion() >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1;
-    }
+    boolean isAtLeastICS();
 
-    public boolean isAtLeastICS() {
-        return getVersion() >= Build.VERSION_CODES.ICE_CREAM_SANDWICH;
-    }
+    boolean isAtLeastHoneycombMR2();
 
-    public boolean isAtLeastHoneycombMR2() {
-        return getVersion() >= Build.VERSION_CODES.HONEYCOMB_MR2;
-    }
+    boolean isAtLeastHoneycombMR1();
 
-    public boolean isAtLeastHoneycombMR1() {
-        return getVersion() >= Build.VERSION_CODES.HONEYCOMB_MR1;
-    }
+    boolean isAtLeastHoneycomb();
 
-    public boolean isAtLeastHoneycomb() {
-        return getVersion() >= Build.VERSION_CODES.HONEYCOMB;
-    }
+    boolean isAtLeastGingerbreadMR1();
 
-    public boolean isAtLeastGingerbreadMR1() {
-        return getVersion() >= Build.VERSION_CODES.GINGERBREAD_MR1;
-    }
-
-    public boolean isAtLeastGingerbread() {
-        return getVersion() >= Build.VERSION_CODES.GINGERBREAD;
-    }
+    boolean isAtLeastGingerbread();
 }
