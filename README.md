@@ -45,5 +45,6 @@ public void example(){
 }
 ```
 
+#Download
 
-compile 'com.github.akodiakson:sdkcheck:0.1.4'
+compile 'com.github.akodiakson:sdkcheck:0.2.1'
