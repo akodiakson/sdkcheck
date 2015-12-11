@@ -11,8 +11,8 @@ if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
 
 with:
 
-```
-if(Sdk.getInstance().isAtLeastLollipop()){
+```java
+if(Sdk.isAtLeastLollipop()){
   ...
 }
 ```
@@ -47,4 +47,6 @@ public void example(){
 
 #Download
 
+```
 compile 'com.github.akodiakson:sdkcheck:0.2.1'
+```
