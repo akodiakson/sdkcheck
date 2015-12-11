@@ -1,8 +1,22 @@
-package com.akodiakson.sdk;
+package com.akodiakson.sdk.singleton;
 
 import android.os.Build;
 
+import com.akodiakson.sdk.SdkContract;
+
 public class Sdk implements SdkContract {
+
+    private static Sdk INSTANCE = new Sdk();
+
+    Sdk() {
+    }
+
+    public static Sdk getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new Sdk();
+        }
+        return INSTANCE;
+    }
 
     public int getVersion() {
         return android.os.Build.VERSION.SDK_INT;
