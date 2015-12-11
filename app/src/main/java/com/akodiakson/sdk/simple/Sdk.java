@@ -24,6 +24,10 @@ public class Sdk {
         return android.os.Build.VERSION.SDK_INT;
     }
 
+    public static boolean isAtLeastCurrentDevelopmentVersion(){
+        return getVersion() >= Build.VERSION_CODES.CUR_DEVELOPMENT;
+    }
+
     public static boolean isAtLeastMarshmallow() {
         return getVersion() >= Build.VERSION_CODES.M;
     }
