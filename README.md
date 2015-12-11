@@ -20,6 +20,7 @@ if(Sdk.isAtLeastLollipop()){
 # Examples:
 
 ```java
+//com.akodiakson.sdk.simple.Sdk
 public void example(){
         if(Sdk.isAtLeastMarshmallow()){
             System.out.println("I'm fluffy");
@@ -33,6 +34,7 @@ public void example(){
 
 Non-static variant (more test-friendly):
 ```java
+//com.akodiakson.sdk.Sdk
 public void example(){
         Sdk sdk = new SdkImpl();
         if(sdk.isAtLeastMarshmallow()){
