@@ -1,5 +1,5 @@
 # sdkcheck
-What version is your user running?
+What version of Android is your user running?
 
 Replaces checks like: 
 
