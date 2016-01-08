@@ -54,5 +54,5 @@ maven { url "https://jitpack.io" }
 ```
 
 ```groovy
-compile 'com.github.akodiakson:sdkcheck:0.2.2'
+compile 'com.github.akodiakson:sdkcheck:0.2.4'
 ```
